@@ -1,0 +1,208 @@
+type: collection.insomnia.rest/5.0
+name: LogicLike
+meta:
+  id: wrk_87d27140add94fa8867dd13f5b71005b
+  created: 1759415209189
+  modified: 1759415209189
+  description: ""
+collection:
+  - url: http://localhost:4200/api
+    name: Index
+    meta:
+      id: req_0a7282ee890645ee9e2f2f919b7737bc
+      created: 1759415322096
+      modified: 1759415344267
+      isPrivate: false
+      description: ""
+      sortKey: -1759415322096
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - name: Ideas
+    meta:
+      id: fld_3ae37be727e045f2a3cafea0e350ffa7
+      created: 1759419032908
+      modified: 1759419032908
+      sortKey: -1759419032908
+      description: ""
+    children:
+      - url: http://localhost:4200/api/ideas
+        name: Create Idea
+        meta:
+          id: req_d34195e50af541ad9a57294ae224f93d
+          created: 1759419037462
+          modified: 1759419222029
+          isPrivate: false
+          description: ""
+          sortKey: -1759419039942
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"title":"Сделать приложение для андроид",
+            	"description":"Что бы работало, а не как обычно..."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4200/api/ideas
+        name: Get all Ideas
+        meta:
+          id: req_343f936180474c089e49aa2429a22813
+          created: 1759421283570
+          modified: 1759421286501
+          isPrivate: false
+          description: ""
+          sortKey: -1759417181019
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"title":"Сделать приложение для андроид",
+            	"description":"Что бы работало, а не как обычно..."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4200/api/ideas/5
+        name: Get idea by id
+        meta:
+          id: req_8a2a734c9d364438b52ebe6d78ca1b39
+          created: 1759421468125
+          modified: 1759422355251
+          isPrivate: false
+          description: ""
+          sortKey: -1759416251557.5
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"title":"Сделать приложение для андроид",
+            	"description":"Что бы работало, а не как обычно..."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Votes
+    meta:
+      id: fld_0a2af9aa708c4e5ca7b6300f6270da8d
+      created: 1759432101395
+      modified: 1759482752514
+      sortKey: -1759363168058
+      description: ""
+    children:
+      - url: http://localhost:4200/api/votes/19/vote
+        name: Vote Idea
+        meta:
+          id: req_e0d7b8ac3e9f4b7ab1da3e538a764ed6
+          created: 1759432101396
+          modified: 1759491774079
+          isPrivate: false
+          description: ""
+          sortKey: -1759419039942
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"title":"Сделать приложение для андроид",
+            	"description":"Что бы работало, а не как обычно..."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4200/api/votes/status
+        name: Votes status
+        meta:
+          id: req_53c6f50aa196439d9cf92307a4fc65ed
+          created: 1759482761425
+          modified: 1759491563276
+          isPrivate: false
+          description: ""
+          sortKey: -1759418110480.5
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"title":"Сделать приложение для андроид",
+            	"description":"Что бы работало, а не как обычно..."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5724ab9525e9f32a96d4cdd9b33d92d9b81ed592
+    created: 1759415209192
+    modified: 1759415209192
+environments:
+  name: Base Environment
+  meta:
+    id: env_5724ab9525e9f32a96d4cdd9b33d92d9b81ed592
+    created: 1759415209191
+    modified: 1759415209191
+    isPrivate: false
